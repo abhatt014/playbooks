@@ -1,6 +1,7 @@
 ---
 - name: update kernel and reboot
   hosts: "{{ host_list }}"
+  become: true
   tasks:
     - name: update kernel
       package:
