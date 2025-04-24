@@ -6,6 +6,6 @@
       package:
         name: "kernel*"
         state: latest
-    - name: reboot
+    - name: reboot server
       reboot:
         reboot_timeout: 3600  
