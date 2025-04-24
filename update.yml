@@ -1,0 +1,11 @@
+---
+- name: update kernel and reboot
+  hosts: "{{ host_list }}"
+  tasks:
+    - name: update kernel
+      package:
+        name: "kernel*"
+        state: latest
+    - name: reboot
+      reboot:
+        reboot_timeout: 3600  
